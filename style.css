@@ -1,0 +1,192 @@
+/* Grinter House Website | Deontae Wills aka Mely */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'IM Fell Great Primer SC', serif;
+    background-color: #EFE3D6;
+}
+
+h2, p {
+    font-family: 'Libre Baskerville', serif;
+}
+
+nav {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-bar::before,
+.nav-bar::after {
+    content: "";
+    display: block;
+    width: 200px; 
+    height: 1px;
+    background-color: #a57b53;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.nav-bar::before {
+    left: 0; 
+}
+
+.nav-bar::after {
+    right: 0; 
+}
+
+.nav-bar li {
+    margin-left: 20px;
+}
+
+.nav-bar li:first-child {
+    margin-left: 0;
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+/* Start of Sections */
+
+
+/* Main Section */
+
+.main-section {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.GH-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #3E2C1C;
+    z-index: 1;
+}
+
+.text-overlay h2, .text-overlay p {
+    color: #3E2C1C
+}
+
+.text-overlay h2{
+    -webkit-text-stroke: 1px #5A4B3B;  
+    color: #F0E4D4; 
+}
+
+.text-overlay p {
+    -webkit-text-stroke: 0.7px #5A4B3B;  
+    color: #F0E4D4; 
+}
+
+.text-overlay h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.text-overlay p {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.main-content a {
+    position: absolute;
+    background-color: #5A4B3B;
+    color: white;
+    padding: 20px 20px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+/* End */
+
+/* Information Section */
+
+.info-heading {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #5A4B3B; /* Dark brown for the title */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #A57B53;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+.information-section {
+    position: relative;
+    padding: 80px 20px;
+    overflow: hidden;
+    background-color: #EFE3D6;
+    text-align: center;
+}
+
+.information-content {
+     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.purpose-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #A57B53;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #FAF3E4; /* Slightly lighter vintage background */
+}
+
+.purpose-logo img {
+    max-width: 250px;
+    border: 2px solid #5A4B3B;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.purpose-logo p {
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 600px;
+    color: #3E2C1C;
+    text-align: left;
+}
+
+

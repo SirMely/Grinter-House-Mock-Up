@@ -1,5 +1,5 @@
-/* Grinter House Website | Deontae Wills aka Mely */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* Grinter Friends | Deontae Wills aka Mely */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
     margin: 0;
@@ -7,186 +7,110 @@
     box-sizing: border-box;
 }
 
-body, html {
-    font-family: 'IM Fell Great Primer SC', serif;
-    background-color: #EFE3D6;
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
 }
 
-h2, p {
+h1, h2, h3 {
     font-family: 'Libre Baskerville', serif;
 }
 
-nav {
-    padding: 10px 20px;
-    margin-bottom: 10px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Navigation */
+/* Navigation Css */
 
-.nav-bar {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.nav-links {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-socials i {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+/* Header nav Css */
+
+.header-section {
     position: relative;
-}
-
-.nav-bar::before,
-.nav-bar::after {
-    content: "";
-    display: block;
-    width: 200px; 
-    height: 1px;
-    background-color: #a57b53;
-    position: absolute;
-    top: 50%; 
-    transform: translateY(-50%);
-}
-
-.nav-bar::before {
-    left: 0; 
-}
-
-.nav-bar::after {
-    right: 0; 
-}
-
-.nav-bar li {
-    margin-left: 20px;
-}
-
-.nav-bar li:first-child {
-    margin-left: 0;
-}
-
-.nav-bar a {
-    color: black;
-    text-decoration: none;
-    padding: 8px 12px;
-}
-
-/* Start of Sections */
-
-
-/* Main Section */
-
-.main-section {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-}
-
-.GH-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #3E2C1C;
+    background-image: url('/logo imgs/The GP.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
 }
 
-.text-overlay h2, .text-overlay p {
-    color: #3E2C1C
-}
-
-.text-overlay h2{
-    -webkit-text-stroke: 1px #5A4B3B;  
-    color: #F0E4D4; 
-}
-
-.text-overlay p {
-    -webkit-text-stroke: 0.7px #5A4B3B;  
-    color: #F0E4D4; 
-}
-
-.text-overlay h2 {
-    font-size: 48px;
-    margin-bottom: 15px;
-    white-space: nowrap;
-}
-
-.text-overlay p {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.main-content a {
+.header-text {
     position: absolute;
-    background-color: #5A4B3B;
-    color: white;
-    padding: 20px 20px;
-    top: 70%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-decoration: none;
-}
-
-/* End */
-
-/* Information Section */
-
-.info-heading {
-    font-size: 28px;
-    margin-bottom: 40px;
-    color: #5A4B3B; /* Dark brown for the title */
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border-bottom: 3px solid #A57B53;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-
-.information-section {
-    position: relative;
-    padding: 80px 20px;
-    overflow: hidden;
-    background-color: #EFE3D6;
+    color: #f5f5f5ed;
     text-align: center;
 }
+/* Note: For some reason it's auto font sizing so I have to seperate them into divs sadly */
 
-.information-content {
-     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.header-h1-txt {
+    font-size: 2rem;
 }
 
-.purpose-logo {
+.header-p-txt {
+    font-size: 1.4rem;
+}
+
+/* Who we are section */
+
+.waw-container {
+    background-color: #D4B59A;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-    border: 2px solid #A57B53;
-    padding: 40px;
-    border-radius: 10px;
-    background-color: #FAF3E4; /* Slightly lighter vintage background */
 }
 
-.purpose-logo img {
-    max-width: 250px;
-    border: 2px solid #5A4B3B;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.waw-text {
+    text-align: center;
+    position: relative;
+    max-width: 50%;
+    height: fit-content;
+    padding: 20px;
 }
 
-.purpose-logo p {
-    font-size: 20px;
-    line-height: 1.8;
-    max-width: 600px;
-    color: #3E2C1C;
-    text-align: left;
+.waw-text h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
-
+.waw-text p {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
